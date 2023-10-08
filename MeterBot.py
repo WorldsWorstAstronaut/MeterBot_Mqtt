@@ -46,9 +46,9 @@ def publish_mqtt_data(temperature, humidity):
     client.connect(MQTT_BROKER_ADDRESS, MQTT_PORT, 60)
     client.publish(MQTT_TOPIC_TEMP, temperature)
     client.publish(MQTT_TOPIC_HUMIDITY, humidity)
-    print(f"Temperature data published to MQTT topic '{MQTT_TOPIC_TEMP}'")
-    print(f"Humidity data published to MQTT topic '{MQTT_TOPIC_HUMIDITY}'")
-    print(f'{humidity}')
+    print(f"Temperature data published to MQTT topic '{MQTT_TOPIC_TEMP}','{temperature}F'")
+    print(f"Humidity data published to MQTT topic '{MQTT_TOPIC_HUMIDITY}','{humidity}%'")
+    
 def main():
     temperature, humidity = get_device_status()
 
