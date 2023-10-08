@@ -7,16 +7,16 @@ import paho.mqtt.client as mqtt
 API_ENDPOINT = "https://api.switch-bot.com/v1.0/devices/{device_id}/status"
 
 # Replace 'YOUR_DEVICE_ID' with your actual SwitchBot device ID
-DEVICE_ID = "C7624839B0B5"
+DEVICE_ID = "YOUR_DEVICE_ID"
 
 # SwitchBot API token
-API_TOKEN = "f326f2aa513eeeeacb6d6a42ad5d515e5b8e83540c808d82d0732b6c449d749530bda39933570c614e730acdeb65f3cc"
+API_TOKEN = "SwitchBot_API_Token"
 
 # MQTT broker details
 MQTT_BROKER_ADDRESS = "mqtt broker address"
 MQTT_PORT = 1883
-MQTT_TOPIC_TEMP = "wetter/act-temp"
-MQTT_TOPIC_HUMIDITY = "wetter/act-hum"
+MQTT_TOPIC_TEMP = "MQTT_Topic_Temp"
+MQTT_TOPIC_HUMIDITY = "MQTT_Topic_hum"
 
 def get_device_status():
     headers = {
